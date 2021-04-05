@@ -1,6 +1,6 @@
+<h1><%= @category_id.name %>'s memo</h1>
 
-    <h3>Memo List</h3>
-    <% @memos.each do |memo|%>
+ <% @memos.each do |memo|%>
     <div class="col-sm-4">
         <div class="panel panel-warning">
             <div class="panel-heading"> 
@@ -14,5 +14,4 @@
             <div class="panel-body"><%= memo.body %></div>
         </div>
     </div>
-    <% end %>
-
+<% end %>

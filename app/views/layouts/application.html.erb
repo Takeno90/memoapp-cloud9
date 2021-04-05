@@ -30,10 +30,9 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Category <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Hobby</a></li>
-                <li><a href="#">Life</a></li>
-                <li><a href="#">Other</a></li>
+                <% @categories.each do |category|%>
+                  <li><a href="/categories/<%= category.id%>"><%= category.name%></a></li>
+                <% end %>
               </ul>
             </li>
           </ul>
